@@ -30,7 +30,24 @@ echo "<br />";
 echo "<br />";
 $cleantext = strip_tags($junktext);
 echo $cleantext;
+echo "<br /> <br />";
+
 
 // This worked
+// you can even specify just certain HTML tags to remove, so this is pretty useful. I could even use this for our little URL problem.  
+
+/*
+ * trying out the str_replace() function
+ *
+*/
+
+$old_url = 'href="/pressflow/node/10029"';
+
+
+$new_url = str_replace("pressflow", "d7pf", $old_url);
+echo $new_url;
+
+// so this works
+
 
 ?>
