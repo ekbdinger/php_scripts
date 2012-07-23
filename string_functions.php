@@ -14,9 +14,23 @@ echo " <strong> ";
 echo $email_len;
 echo "</strong><br /> <br />";
 echo "This is how many characters are in the string $email using the <strong> strlen()</strong> function";
+echo "<br />";
+echo "<br />";
 
 
 
+/*
+ *
+ * strip_tags() removes PHP and HTML from a string
+*/
 
+$junktext = '<strong>this is some text </strong>';
+echo $junktext;
+echo "<br />";
+echo "<br />";
+$cleantext = strip_tags($junktext);
+echo $cleantext;
+
+// This worked
 
 ?>
